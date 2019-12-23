@@ -5,56 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML5 tags</title>
-    <style>
-    	html {
-    		font-family: Verdana, Geneva, Tahoma, sans-serif;
-    		font-size: 13px;
-    	}
-    	.html-tag {
-            padding-top: 10px;
-    		border-bottom: dotted 1px grey;
-    		width: 100%;
-    	}
-        .header {
-            font-size: large;
-            color: darkmagenta;
-            padding-bottom: 10px;
-        }
-        .sub-header {
-            font-size: small;
-            color: brown;
-            padding-bottom: 5px;
-        }
-        .content{
-            padding-left: 5px;            
-        }
-
-        .text-pdleft30{
-            padding-left: 30px;
-        }
-
-        .text-underline {
-            text-decoration: underline;
-        }
-
-        .text-bold {
-            font-weight:  bold;
-        }
-        .div-note {
-            border: solid 1px goldenrod;
-            width: 80%;
-            margin-left: 5px;  
-            margin-top: 5px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-style: italic;
-        }
-
-        .display-image {
-            border: solid 1px cornflowerblue;
-            margin-left: 15px;
-        }
-
-    </style>
+    
+    <!-- <ref: https://www.webucator.com/how-to/how-create-css-external-style-sheet.cfm> -->
+    <link href="style/base.css" rel="stylesheet" type="text/css" />    
 </head>
 <body>
     <div class="html-tag">
@@ -184,6 +137,21 @@
     </div>
 
     <div class="html-tag">
+        <div class="header">00. tag: HTML Element</div>
+        <div class="sub-header">Description:</div>
+        <p class="content">
+           (a) A HTML consists of Start tag, End tag and Content between them <br/>
+           (b) Few HTML Elements do not have End tags, these tags are called as:
+           <ul>
+               <li type="circle">Empty Elements</li>
+               <li type="circle">Self Closing Elements</li>
+               <li type="circle">Void Elements</li>
+           </ul>
+           <span class="content">(Example:) &lt;br&gt; (line-break), &lt;hr&gt; (horizontal-line) </span>
+        </p>
+    </div>
+
+    <div class="html-tag">
         <div class="header">00. tag: Single / Double quotes</div>
         <div class="sub-header">Description:</div>
         <p class="content">
@@ -193,6 +161,47 @@
            &lt;a href="https://www.javatpoint.com" &gt; A link to HTML &lt;/a&gt; <br/>
            &lt;a href='https://www.javatpoint.com' &gt; A link to HTML &lt;/a&gt; <br/>
            &lt;a href=https://www.javatpoint.com &gt; A link to HTML (New in HTML5) &lt;/a&gt; <br/>
+        </p>
+    </div>
+
+    <div class="html-tag">
+        <div class="header">00. tag: Block Level and Inline</div>
+        <div class="sub-header">Description:</div>
+        <p class="content">
+           (a) For default display and styling, HTML elements are divident into two category
+           <ol>
+               <li type="a">Block-Level Element</li>
+               <li type="a">Inline Element</li>
+           </ol>
+        </p>
+    </div>
+
+    <div class="html-tag">
+        <div class="header">00. tag: Block-Level Elements</div>
+        <div class="sub-header">Description:</div>
+        <p class="content">
+           (a) They always starts with new line and tasks full width of the web-page from left to right <br/>
+           (Example:) h1 - h6; table; main; hr, li, div etc.. <br/>
+           (b) All these tags take full width of the web-page
+        </p>
+    </div>
+
+    <div class="html-tag">
+        <div class="header">00. tag: In-Line Elements</div>
+        <div class="sub-header">Description:</div>
+        <p class="content">
+           (a) They do not start with new line and take the width as per the requirement<br/>
+           (b) They are mostly used with other elements <br/>
+           (Example:) button, label, time, span, br, etc.. 
+        </p>
+    </div>
+
+    <div class="html-tag">
+        <div class="header">00. tag: HTML Formatting</div>
+        <div class="sub-header">Description:</div>
+        <p class="content">
+           (a) HTML provides the ability to format a text, without using CSS <br/>
+           (b) Example: <a href="52.HTML-Formatting-tags.html">link</a> <br/>
         </p>
     </div>
 
