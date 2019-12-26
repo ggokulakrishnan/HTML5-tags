@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML table with col-span attribute</title>
+    <style>
+        div {
+             border: solid 1px lightseagreen; 
+             background-color: lightyellow;
+             padding-left: 5px;
+             padding-top: 5px;
+             padding-bottom: 5px;
+             font-family: Verdana, Geneva, Tahoma, sans-serif;
+             font-size: 13px;
+             margin-bottom: 10px;
+         }
+ 
+         table {
+             border-collapse: collapse;
+             width: 100%;
+         }
+ 
+         /* this will apply 5px space from left right top botton to element th and td */
+         th, td {
+             border: solid 1px black;
+             padding: 10px;
+         }
+ 
+     </style>
+</head>
+<body>
+    <div>
+        (a) if we want the cell to space more than one column, we will use col-span attribute <br/>
+        (b) width, can be represented either in pixel or percentage
+    </div>
+
+    <table>
+        <caption>colspan applied to table header (th)</caption>
+        <tr>
+            <th colspan="2">Name</th>            
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>Rama</td>
+            <td>Dasaratha</td>
+            <td>88</td>
+        </tr>
+        <tr>
+            <td>Susan</td>
+            <td>Samuel</td>
+            <td>86</td>
+        </tr>
+        <tr>
+            <td>Sara</td>
+            <td>Saravana</td>
+            <td>84</td>
+        </tr>
+        <tr>
+            <td>Henry</td>
+            <td>Peter</td>
+            <td>82</td>
+        </tr>
+    </table>
+
+    <br/>
+
+    <table>
+        <caption>colspan applied to table data (td)</caption>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td colspan="2">Rama Dasaratha</td>            
+            <td>88</td>
+        </tr>
+        <tr>
+            <td colspan="2">Susan Samuel</td>
+            <td>86</td>
+        </tr>
+        <tr>
+            <td colspan="2">Sara Saravana</td>
+            <td>84</td>
+        </tr>
+        <tr>
+            <td colspan="2">Henry Peter</td>
+            <td>82</td>
+        </tr>
+    </table>    
+</body>
+</html>

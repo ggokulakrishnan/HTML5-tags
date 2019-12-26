@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML table with row-span attribute</title>
+    <style>
+        div {
+             border: solid 1px lightseagreen; 
+             background-color: lightyellow;
+             padding-left: 5px;
+             padding-top: 5px;
+             padding-bottom: 5px;
+             font-family: Verdana, Geneva, Tahoma, sans-serif;
+             font-size: 13px;
+             margin-bottom: 10px;
+         }
+ 
+         table {
+             border-collapse: collapse;
+             /* width: 100%; */
+         }
+ 
+         /* this will apply 5px space from left right top botton to element th and td */
+         th, td {
+             border: solid 1px black;
+             padding: 10px;
+         }
+ 
+     </style>
+</head>
+<body>
+    <div>
+        (a) if we want the cell to space more than one column, we will use col-span attribute <br/>
+        (b) width, can be represented either in pixel or percentage
+    </div>
+
+    <table>
+        <caption>rowspan applied to table row (th)</caption>
+        <tr>
+            <th>Name</th>            
+            <td>Rama Dasaratha</td>
+            <td>Sara Saravanan</td>
+            <td>Peter Henry</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Phone Number</th>
+            <td>9443471976</td>
+            <td rowspan="2">9444647876</td>
+            <td>9482222200</td>
+        </tr
+        <tr>           
+            <td>9025011234</td>
+            <td>8428333300</td>
+        </tr>
+    </table> 
+    
+    <br/>
+
+    <div>
+        (a) adding an additional rows to the above HTML table
+    </div>
+
+    <table>
+        <caption>rowspan applied to table row (th)/(td)</caption>
+        <tr>
+            <th>Name</th>
+            <td>Rama Dasaratha</td>
+            <td>Sara Saravanan</td>
+            <td>Peter Henry</td>
+            <td>Krishna Vasudevan</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Phone Number</th>
+            <td>9443471976</td>
+            <td rowspan="2">9444647876</td>
+            <td>9482222200</td>
+            <td>8608886089</td>
+        </tr
+        <tr>           
+            <td>9025011234</td>
+            <td>8428333300</td>
+            <td>8608011234</td>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <td>Chennai</td>
+            <td>Bangalore</td>
+            <td>Mumbai</td>
+            <td>Gujarat</td>
+        </tr>
+    </table> 
+</body>
+</html>

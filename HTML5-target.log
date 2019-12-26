@@ -1,0 +1,9 @@
+01. In the file "51.Paragraph-tag.html", how to make the last div align to top. Now the alignment is bottom
+02. In the file "51.Paragraph-tag.html", now the alignment of last div is botton, how to increase div size so that width of left and right div are same
+03. after ul/ol with li tags while the existing formatting is lost. the text is appraring from left (0), need to create a space tag (with content style class)
+04. How to interpret the below css style
+         table#alter tr:nth-child(even) { 
+            background-color: #eee;  
+         }
+    Ref: 55e.Table-style-even-odd.html
+05. 
