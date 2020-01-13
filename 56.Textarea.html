@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 - textarea</title>
+    <!-- refer style sheet present in the project -->
+    <link href="style/base.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h2>HTML 5 - text area</h2>
+    textarea HTML Control: <br />
+    <input type="text" name="textFirstName" width="50" height="20">
+    <textarea id="textareaAddress" cols="50" rows="5" autofocus="textareaAddress"></textarea>
+    <br />
+    <button id="buttonSubmit" width="50" height="20">Submit</button>
+    <br />
+    <br />
+    <div>
+        <strong>textarea: attributes</strong> <br />
+        Ref: https://html.com/tags/textarea/
+        <br />       
+        when you need a field that can accept any combination and length of plain text letters, numbers,
+        and symbols, &lt;textarea&gt; is the element you are looking for <br />
+        <br />
+        (a) <strong>autofocus</strong>: text area should be automatically get focused when the page is loaded <br />
+        (b) <strong>form</strong>: Associates the textarea with a form. Use the ID attribute of the form as
+        the value for the textarea form attributes. This allows you to place a textarea anywhere on
+        a webpage, even outside of the form element, and still have the contents of the textarea
+        included when the form is submitted <br />
+        (c) <strong>maxlength and minlength</strong>: Used to specify a minimum or maximum number of characters that
+        may be entered into a textarea <br />
+        (d) <strong>placeholder </strong>: Adds placeholder text to the textarea that disappears as soon as a user places
+        the cursor inside of the element <br />
+        (e) <strong>required</strong>: Requires that the textarea contain content prior to allowing form submission <br />
+    </div>
+    <br />
+    <p>This text area is limited to just 10 characters</p> 
+    <textarea cols="50" rows="3" maxlength="10" placeholder="Just 10 characters allowed"></textarea>
+    <p>This text area is readonly and cannot be changed</p> 
+    <textarea cols="50" rows="3" readonly>This value can't be changed</textarea>
+    <br />
+    <br />
+    Ref: https://www.javatpoint.com/html-textarea
+    <br />
+    <form id="frmTextArea" action="update.aspx">
+        Name: <input type="text" name="txtName">
+        <input type="submit">
+    </form>
+    <textarea rows="9" cols="70" name="comment" form="frmTextArea">  
+        Enter text here...
+    </textarea>  
+    <p>The text area above is outside the form element, but should still be a part of the form.</p>
+</body>
+
+</html>

@@ -45,3 +45,7 @@ html {
     border: solid 1px cornflowerblue;
     margin-left: 15px;
 }
+
+.pad-left-15 {
+    padding-left: 15px;
+} 

@@ -20,6 +20,15 @@
 				"line_ending": "Windows",
 				"name": "target.log"
 			}
+		},
+		{
+			"contents": "----- BEGIN LICENSE -----\nTwitterInc\n200 User License\nEA7E-890007\n1D77F72E 390CDD93 4DCBA022 FAF60790\n61AA12C0 A37081C5 D0316412 4584D136\n94D7F7D4 95BC8C1C 527DA828 560BB037\nD1EDDD8C AE7B379F 50C9D69D B35179EF\n2FE898C4 8E4277A8 555CE714 E1FB0E43\nD5D52613 C3D12E98 BC49967F 7652EED2\n9D2D2E61 67610860 6D338B72 5CF95C69\nE36B85CC 84991F19 7575D828 470A92AB\n------ END LICENSE ------",
+			"settings":
+			{
+				"buffer_size": 379,
+				"line_ending": "Windows",
+				"name": "----- BEGIN LICENSE -----"
+			}
 		}
 	],
 	"build_system": "",
@@ -70,7 +79,7 @@
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -84,6 +93,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"97940D",
+			"97 94 0D"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -101,7 +112,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -130,6 +141,34 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 379,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								379,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "----- BEGIN LICENSE -----",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 0,
 					"type": "text"
 				}
@@ -138,7 +177,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -175,7 +214,7 @@
 	"project": "HTMl5-SublimeProject.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":

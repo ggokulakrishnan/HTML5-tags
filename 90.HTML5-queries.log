@@ -1,2 +1,11 @@
 01. In the file "51.Paragraph-tag.html", how to make the last div align to top. Now the alignment is bottom
 02. In the file "51.Paragraph-tag.html", now the alignment of last div is botton, how to increase div size so that width of left and right div are same
+03. In the file "55.Table-tag.html" below eg: why can not we put the style to span element, and need to put in individual <a> elements
+    putting in span is applied to fist <a> inside the span and not to the second <a> in the span
+    <span>
+        <a class="pad-left-15" href="55.Table-tag.html" target="_blank">table border, table caption, collapse-border</a> <br/>
+        <a class="pad-left-15" href="55a.Table-cell-padding.html" target="_blank">table cell-padding</a>
+    </span>
+04. When to use <span> and <literal> element and what is the difference between them
+
+

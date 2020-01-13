@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table tfoot</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12.5px;
+        }
+        div {
+            border: solid 1px lightseagreen;
+            background-color: lightyellow;
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+        table {
+            border-collapse: collapse;            
+        }
+        thead, tfoot {
+            background-color: lavender;
+        }
+        tbody {
+            background-color: lightgoldenrodyellow;
+        }
+        th, td {
+            border: solid 1px grey;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <strong>tfoot</strong>: set of rows that represent the footer of the table <br/>
+        (a) The tfoot tag must contain atleast one &lt;tr&gt;
+        (b) Even if the tfoot tag is planned in the middle of the table it will appear at the bottom
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Class</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th>-</th>
+                <th>40</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Rama</td>
+                <td>4th Std</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Krishna</td>
+                <td>5th Std</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Sundar</td>
+                <td>3rd Std</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Muruga</td>
+                <td>1st Std</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

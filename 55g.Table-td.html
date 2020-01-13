@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML table - td element</title>
+    <link href="style/base.css" rel="stylesheet" type="text/css" />
+    <style>
+        div {
+            border: solid 1px lightseagreen; 
+            background-color: lightyellow;
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+
+        /*the backgroud color of the table to be in almond color for th, tr, td*/
+        table {
+            border-collapse: collapse;
+            background-color: blanchedalmond;
+        }
+
+        /*override the above settings of table and set chocolate color for the table header th*/
+        th {
+            background-color: chocolate;
+        }
+
+        th, td {
+            border: solid 1px purple;
+            padding: 5px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div>
+        (a) <strong>&lt;td&gt;</strong> contains the data of HTML table <br />
+        (b) For <strong>&lt;tr&gt;</strong> HTML element <strong>&lt;td&gt;</strong> should be the child element <br />
+        (c) The contents of HTML element &lt;td&gt; are regular and left aligned by default
+    </div>
+    <br />
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+
+        <tr>
+            <td>Books</td>
+            <td>5</td>
+            <td>589</td>
+        </tr>
+
+        <tr>
+            <td>T-shirt</td>
+            <td>5</td>
+            <td>3500</td>
+        </tr>
+
+        <tr>
+            <td>Jeans</td>
+            <td>2</td>
+            <td>5000</td>
+        </tr>
+    </table>
+    <br/>
+    <div>
+        <strong>Note:</strong> HTML &lt;th&gt; (table header) element are always bold text by default
+    </div>
+
+</body>
+
+</html>

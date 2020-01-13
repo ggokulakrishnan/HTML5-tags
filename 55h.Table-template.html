@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table - template element</title>
+    <!-- refer style sheet present in the project -->
+    <link href="style/base.css" rel="stylesheet" type="text/css" />
+    <!-- page level css/style -->
+    <style>
+        div {
+            border: solid 1px lightseagreen;
+            background-color: lightyellow;
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+
+        button {
+            width: 75px;
+            height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        (a) HTML <strong>&lt;template&gt;</strong> tag is used to hold client side content and it will not be rendered
+        at page_load <br />
+        (b) This tag can be instantiated at runtime using Javascript <br />
+        (c) The content template will not be instantiated until rendered by Javascript <br />
+        (d) During page_load the browser processes the content and ensures it is valid but it will not be rendered
+        <br />
+        (e) The &lt;template&gt; tag can be placed anywhere inside of HTML element
+        <ul>
+            <li type="1">(head) &lt;head&gt;,</li>
+            <li type="1">(body) &lt;body&gt;,</li>
+            <li type="1">(frameset) &lt;frameset&gt;,</li>
+            <li type="1">(table) &lt;table&gt;</li>
+        </ul>
+        (f) The <strong>&lt;template&gt;</strong> tag is newly added element in HTML5
+    </div>
+    <h2>table template</h2>
+    <button onclick="buttonTemplate_click()">template</button>
+    <br />
+    <br />
+    <template id="HTML5template">
+        <script>alert('Thanks for choosing HTML template, click OK button and the image will load')</script>
+        <img src="images/hello-html5.png" alt="HTML template tutorial" height="150" width="200" />
+    </template>
+    <script>
+        function buttonTemplate_click() {
+            var x = document.getElementsByTagName("template")[0];
+            var clon = x.content.cloneNode(true);
+            document.body.appendChild(clon);
+        }  
+    </script>
+</body>
+
+</html>

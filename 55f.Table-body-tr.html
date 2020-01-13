@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 - table body, tr, td</title>
+    <style>
+        div {
+             border: solid 1px lightseagreen; 
+             background-color: lightyellow;
+             padding-left: 5px;
+             padding-top: 5px;
+             padding-bottom: 5px;
+             font-family: Verdana, Geneva, Tahoma, sans-serif;
+             font-size: 13px;
+             margin-bottom: 5px;
+         }
+
+         table, th, td {
+             border: solid 1px red;
+             border-collapse: collapse;
+             /*To center this table, you would need to add margin-left:auto; and margin-right:auto;*/
+             margin-left: auto;
+             margin-right: auto;
+         }
+         
+         th, td {
+             padding: 5px;
+         }
+
+    </style>
+</head>
+<body>
+    <div>
+        (a) HTML table body is used to group table rows &lt;tr&gt; <br/>
+        (b) table-body must be the child element of the table <br/>
+        (c) table-body must contain one or more table rows &lt;tr&gt;
+
+        <p> <strong>Note:</strong> <br/>
+            (d) When adding a table to a web page, by default, it's aligned to the left side of the page <br/>
+            (e) To center this table, you would need to add margin-left:auto; and margin-right:auto; to end of the style attribute <br/>
+            (f) To make the table more eye appealing add padding:2px; and border-spacing:20px; <br/>
+            (g) It will add spacing between the data points and the border to improve readability
+        </p>
+    </div>
+    <br/>
+
+    <table>
+        <thead>  
+            <tr>  
+             <th>EmpId</th>  
+             <th>Name</th>  
+             <th>Email-Id</th>     
+            </tr>  
+        </thead>  
+        <tbody>  
+            <tr>  
+             <td>121</td>  
+             <td>John</td>  
+             <td>john123@gmail.com</td>  
+            </tr>  
+       
+            <tr>  
+             <td>122</td>  
+             <td>William </td>  
+             <td>william56@gmail.com</td>  
+            </tr>  
+       
+            <tr>  
+             <td>123</td>  
+             <td>Amit</td>  
+             <td>amitk98@gmail.com</td>  
+            </tr>     
+        </tbody>  
+    </table>
+</body>
+</html>
